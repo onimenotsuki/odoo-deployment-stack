@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib/core';
-import { OdooStack } from '../lib/odoo-deployment-stack'; 
+import { OdooDeploymentStack } from '../lib/odoo-deployment-stack';
 
 const app = new cdk.App();
-new OdooStack(app, 'OdooStack', {
+new OdooDeploymentStack(app, 'OdooDeploymentStack', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
     region: process.env.CDK_DEFAULT_REGION,
