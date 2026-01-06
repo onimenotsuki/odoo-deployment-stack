@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib/core';
-import { OdooDeploymentStack } from '../lib/odoo-deployment-stack';
+import { OdooDeploymentStack } from '@lib/odoo-deployment-stack';
 
 const app = new cdk.App();
 new OdooDeploymentStack(app, 'OdooDeploymentStack', {
