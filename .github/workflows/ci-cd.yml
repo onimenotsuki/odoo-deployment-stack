@@ -45,6 +45,9 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ vars.AWS_REGION }}
 
+      - name: Bootstrap CDK if needed
+        run: npx cdk bootstrap
+
       - name: CDK Deploy
         env:
           ODOO_DB_PASSWORD: ${{ secrets.ODOO_DB_PASSWORD }}
