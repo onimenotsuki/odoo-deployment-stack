@@ -4,6 +4,9 @@
   "bin": {
     "odoo-deployment-stack": "bin/odoo-deployment-stack.js"
   },
+  "engines": {
+    "node": ">=24.12.0"
+  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
