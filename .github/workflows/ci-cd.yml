@@ -52,7 +52,7 @@ jobs:
           CDK_DEFAULT_REGION: ${{ vars.AWS_REGION }}
         run: |
           npx cdk deploy --require-approval never \
-            --parameters OdooDbPassword=${{ secrets.ODOO_DB_PASSWORD }} \
-            --parameters OdooAdminPassword=${{ secrets.ODOO_ADMIN_PASSWORD }}
+            --parameters "OdooDbPassword=${{ secrets.ODOO_DB_PASSWORD }}" \
+            --parameters "OdooAdminPassword=${{ secrets.ODOO_ADMIN_PASSWORD }}"
           
             
