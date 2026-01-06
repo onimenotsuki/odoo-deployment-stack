@@ -2,7 +2,7 @@
   "name": "odoo-deployment-stack",
   "version": "0.1.0",
   "bin": {
-    "odoo-deployment-stack": "bin/odoo-deployment-stack.js"
+    "odoo-deployment-stack": "bin/odoo-stack.js"
   },
   "engines": {
     "node": ">=24.12.0"
